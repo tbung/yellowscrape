@@ -89,3 +89,7 @@ ROBOTSTXT_OBEY = False
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 USER_AGENT = "'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.1847.131 Safari/537.36"
+HTTPERROR_ALLOW_ALL = True
+FEED_EXPORTERS = {
+    'xlsx': 'scrapy_xlsx.XlsxItemExporter',
+}
